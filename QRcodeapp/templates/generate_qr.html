@@ -1,0 +1,22 @@
+<!-- qr_generator/templates/generate_qr.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Code</title>
+</head>
+<body>
+    <h1>Generate QR Code</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="qr_text" placeholder="Enter text for QR code" required>
+        <button type="submit">Generate QR Code</button>
+    </form>
+
+    {% if qr_image %}
+        <h2>Generated QR Code:</h2>
+        <img src="data:image/png;base64,{{ qr_image }}" alt="QR Code">
+    {% endif %}
+</body>
+</html>
