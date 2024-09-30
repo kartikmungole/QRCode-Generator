@@ -21,3 +21,8 @@ The QR Code Generator is a web-based application built using Django, Python, and
 * Django
 * qrcode
 * Pillow: For image handling and QR code generation
+
+Usage
+On the homepage, enter any value (character, word, number, etc.) in the input box.
+Click the Generate QR Code button.
+The generated QR code will be displayed, and you will have an option to download it.
