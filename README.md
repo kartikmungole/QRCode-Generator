@@ -15,11 +15,11 @@ The QR Code Generator is a web-based application built using Django, Python, and
 * Python: Core programming language used for logic implementation.
 * HTML: Frontend structure for the web interface.
 
+
 ## Dependencies
 * Django
 * QRcode
 * Pillow: For image handling and QR code generation
-
 
 
 ## Usage
